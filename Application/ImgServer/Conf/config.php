@@ -12,6 +12,6 @@ return array(
     'db_charset'=> 'utf8',
     ),
 
-    'file_path'=>dirname(__FILE__)."/../../upload"
+    'file_path'=>__ROOT__."/upload"
     // 'file_path'=>dirname(__FILE__)."\..\..\upload"
 );
