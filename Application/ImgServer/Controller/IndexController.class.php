@@ -5,7 +5,6 @@ use Think\Controller;
 class IndexController extends Controller {
     public function uploadpic(){
         $path = C('file_path');
-        $url = "10.95.26.24:8791";
         $filetype = $_FILES['img']['type'];
         if (($filetype === 'image/gif') || ($filetype === 'image/jpeg') || ($filetype === 'image/png') || ($filetype === 'image/jpg')){
             if ($_FILES['img']['error'] > 0){
@@ -33,7 +32,7 @@ class IndexController extends Controller {
                 move_uploaded_file($_FILES['img']['tmp_name'], $img_path);
                 $ret = array(
                     'err_no' => 0,
-                    'data' => __APP__+"/ImgServer/index/downloadpic?img_name=$img_name",
+                    'data' => "http://".$_SERVER['SERVER_ADDR'].__APP__."/ImgServer/index/downloadpic?img_name=$img_name",
                     'err_msg'=> '',
                 );   
             }
