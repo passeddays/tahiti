@@ -49,7 +49,14 @@ class IndexController extends Controller {
     public function downloadpic(){
         $path = C('file_path');
         $img_name = I('img_name');
-        $db = M('download_count', '', 'mysql');
+        if(!$img_name){
+            $this->ajaxReturn(array(
+                'err_no' => -1,
+                'data' => '',
+                'err_msg'=> 'file name is empty',
+            ));
+        }
+        $db = M('_count', 'download', 'mysql');
         if($db->where('count>=1')->setDec('count',1)){
             $file = "$path/$img_name";
             header('Content-Type: application/force-download');
