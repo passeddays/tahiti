@@ -32,7 +32,7 @@ class IndexController extends Controller {
                 move_uploaded_file($_FILES['img']['tmp_name'], $img_path);
                 $ret = array(
                     'err_no' => 0,
-                    'data' => "http://".$_SERVER['SERVER_ADDR'].__APP__."/ImgServer/index/downloadpic?img_name=$img_name",
+                    'data' => "http://".$_SERVER['SERVER_ADDR'].__APP__."/ImgServer/index/downloadpic?&img_name=$img_name",
                     'err_msg'=> '',
                 );   
             }
@@ -46,7 +46,7 @@ class IndexController extends Controller {
         $this->ajaxReturn($ret);
     }
 
-    public function downloadpic(){
+    public function downloadpic($img_name){
         $path = C('file_path');
         $img_name = I('img_name');
         if(!$img_name){
@@ -57,7 +57,7 @@ class IndexController extends Controller {
             ));
         }
         $db = M('count', 'download_', 'mysql');
-        if($db->where('count>=1')->setDec('count',1)){
+        if($db->where('count<100')->setDec('count',1)){
             $file = "$path/$img_name";
             header('Content-Type: application/force-download');
             header('Content-Disposition: attachment; filename='.basename($file));
