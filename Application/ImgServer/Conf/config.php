@@ -8,7 +8,7 @@ return array(
     'db_pwd'   => 'root',
     'db_host'  => '127.0.0.1',
     'db_port'  => '3306',
-    'db_name'  => 'testtest',
+    'db_name'  => 'tahiti',
     'db_charset'=> 'utf8',
     ),
 
