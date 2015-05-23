@@ -7,7 +7,7 @@ class IndexController extends Controller {
         $path = C('file_path');
         $url = "10.95.26.24:8791";
         $filetype = $_FILES['img']['type'];
-        if (($filetype === 'image/gif') || ($filetype === 'image/jpeg') || ($filetype === 'image/png')){
+        if (($filetype === 'image/gif') || ($filetype === 'image/jpeg') || ($filetype === 'image/png') || ($filetype === 'image/jpg')){
             if ($_FILES['img']['error'] > 0){
                 $ret = array(
                     'err_no' => 1,
@@ -30,7 +30,6 @@ class IndexController extends Controller {
                 $img_name = time().$type;
                 //文件名，可存数据库
                 $img_path = "$path/$img_name";
-                error_log($img_path);
                 move_uploaded_file($_FILES['img']['tmp_name'], $img_path);
                 $ret = array(
                     'err_no' => 0,

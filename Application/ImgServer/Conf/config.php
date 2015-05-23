@@ -5,13 +5,13 @@ return array(
     'mysql' => array(
     'db_type'  => 'mysql',
     'db_user'  => 'root',
-    'db_pwd'   => '',
+    'db_pwd'   => 'root',
     'db_host'  => '127.0.0.1',
     'db_port'  => '3306',
     'db_name'  => 'testtest',
     'db_charset'=> 'utf8',
     ),
 
-    //'file_path'=>dirname(__FILE__)."/../../upload"
-    'file_path'=>dirname(__FILE__)."\..\..\upload"
+    'file_path'=>dirname(__FILE__)."/../../upload"
+    // 'file_path'=>dirname(__FILE__)."\..\..\upload"
 );
