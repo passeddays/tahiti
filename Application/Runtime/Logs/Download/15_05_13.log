@@ -1,0 +1,58 @@
+[ 2015-05-13T00:02:22+08:00 ] 127.0.0.1 /tahiti/index.php?s=/download/index/uploadpic
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000345s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000591s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000634s ]
+NOTIC: [8] Undefined index: img D:\XAMPP\htdocs\tahiti\Application\Download\Controller\IndexController.class.php 第 9 行.
+
+[ 2015-05-13T00:10:06+08:00 ] 127.0.0.1 /tahiti/index.php?s=/download/index/uploadpic
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000895s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001070s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001148s ]
+NOTIC: [2] move_uploaded_file(D:\XAMPP\htdocs\tahiti\Application\Download\Conf/../../upload/1431447006image/jpeg): failed to open stream: No such file or directory D:\XAMPP\htdocs\tahiti\Application\Download\Controller\IndexController.class.php 第 21 行.
+NOTIC: [2] move_uploaded_file(): Unable to move 'D:\XAMPP\tmp\php2108.tmp' to 'D:\XAMPP\htdocs\tahiti\Application\Download\Conf/../../upload/1431447006image/jpeg' D:\XAMPP\htdocs\tahiti\Application\Download\Controller\IndexController.class.php 第 21 行.
+
+[ 2015-05-13T00:11:43+08:00 ] 127.0.0.1 /tahiti/index.php?s=/download/index/uploadpic
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000316s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000463s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000501s ]
+NOTIC: [2] move_uploaded_file(D:\XAMPP\htdocs\tahiti\Application\Download\Conf/../../upload/1431447103image/jpeg): failed to open stream: No such file or directory D:\XAMPP\htdocs\tahiti\Application\Download\Controller\IndexController.class.php 第 22 行.
+NOTIC: [2] move_uploaded_file(): Unable to move 'D:\XAMPP\tmp\php9D88.tmp' to 'D:\XAMPP\htdocs\tahiti\Application\Download\Conf/../../upload/1431447103image/jpeg' D:\XAMPP\htdocs\tahiti\Application\Download\Controller\IndexController.class.php 第 22 行.
+
+[ 2015-05-13T00:11:54+08:00 ] 127.0.0.1 /tahiti/index.php?s=/download/index/uploadpic
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000730s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000787s ]
+NOTIC: [8] Undefined index: img D:\XAMPP\htdocs\tahiti\Application\Download\Controller\IndexController.class.php 第 9 行.
+
+[ 2015-05-13T00:12:24+08:00 ] 127.0.0.1 /tahiti/index.php?s=/download/index/uploadpic
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000400s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000612s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000650s ]
+NOTIC: [2] move_uploaded_file(D:\XAMPP\htdocs\tahiti\Application\Download\Conf/../../upload/1431447144image/jpeg): failed to open stream: No such file or directory D:\XAMPP\htdocs\tahiti\Application\Download\Controller\IndexController.class.php 第 22 行.
+NOTIC: [2] move_uploaded_file(): Unable to move 'D:\XAMPP\tmp\php3CA5.tmp' to 'D:\XAMPP\htdocs\tahiti\Application\Download\Conf/../../upload/1431447144image/jpeg' D:\XAMPP\htdocs\tahiti\Application\Download\Controller\IndexController.class.php 第 22 行.
+
+[ 2015-05-13T00:13:37+08:00 ] 127.0.0.1 /tahiti/index.php?s=/download/index/uploadpic
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000315s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000457s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000496s ]
+NOTIC: [2] move_uploaded_file(D:\XAMPP\htdocs\tahiti\Application\Download\Conf\..\..\upload/1431447217image/jpeg): failed to open stream: No such file or directory D:\XAMPP\htdocs\tahiti\Application\Download\Controller\IndexController.class.php 第 22 行.
+NOTIC: [2] move_uploaded_file(): Unable to move 'D:\XAMPP\tmp\php5851.tmp' to 'D:\XAMPP\htdocs\tahiti\Application\Download\Conf\..\..\upload/1431447217image/jpeg' D:\XAMPP\htdocs\tahiti\Application\Download\Controller\IndexController.class.php 第 22 行.
+

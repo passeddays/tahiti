@@ -1,0 +1,1 @@
+a:8:{i:0;s:8:"event_id";i:1;s:7:"club_id";i:2;s:10:"event_name";i:3;s:10:"event_time";i:4;s:11:"event_brief";i:5;s:12:"event_poster";s:3:"_pk";s:8:"event_id";s:5:"_type";a:6:{s:8:"event_id";s:7:"int(11)";s:7:"club_id";s:7:"int(11)";s:10:"event_name";s:4:"text";s:10:"event_time";s:8:"datetime";s:11:"event_brief";s:4:"text";s:12:"event_poster";s:8:"tinytext";}}

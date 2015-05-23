@@ -1,0 +1,66 @@
+[ 2015-05-12T23:55:38+08:00 ] 127.0.0.1 /tahiti/manage/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.009760s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.010296s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010392s ]
+SQL: SHOW COLUMNS FROM `t_club_base` [ RunTime:0.0239s ]
+SQL: SHOW COLUMNS FROM `t_club_event` [ RunTime:0.0132s ]
+SQL: SHOW COLUMNS FROM `t_club_detail` [ RunTime:0.0061s ]
+SQL: SHOW COLUMNS FROM `t_club_img` [ RunTime:0.0055s ]
+
+[ 2015-05-12T23:55:43+08:00 ] 127.0.0.1 /tahiti/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000340s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000465s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000503s ]
+SQL: SHOW COLUMNS FROM `t_club_base` [ RunTime:0.0053s ]
+SQL: SHOW COLUMNS FROM `t_club_event` [ RunTime:0.0046s ]
+SQL: SHOW COLUMNS FROM `t_club_detail` [ RunTime:0.0044s ]
+SQL: SHOW COLUMNS FROM `t_club_img` [ RunTime:0.0050s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.051437s ]
+INFO: [ app_end ] --END-- [ RunTime:0.051574s ]
+
+[ 2015-05-12T23:55:50+08:00 ] 127.0.0.1 /tahiti/manage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000360s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000654s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000705s ]
+SQL: SHOW COLUMNS FROM `t_club_base` [ RunTime:0.0051s ]
+SQL: SHOW COLUMNS FROM `t_club_event` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `t_club_detail` [ RunTime:0.0046s ]
+SQL: SHOW COLUMNS FROM `t_club_img` [ RunTime:0.0052s ]
+
+[ 2015-05-12T23:56:58+08:00 ] 127.0.0.1 /tahiti/index.php?s=/download/index/uploadpic
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000353s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000462s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000499s ]
+ERR: 无法加载控制器:Download
+
+[ 2015-05-12T23:58:06+08:00 ] 127.0.0.1 /tahiti/index.php?s=/download/index/uploadpic
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000405s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000554s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000593s ]
+ERR: 无法加载控制器:Download
+
+[ 2015-05-12T23:59:36+08:00 ] 127.0.0.1 /tahiti/index.php?s=/download/index/uploadpic
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000477s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000817s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000870s ]
+ERR: 无法加载控制器:Download
+

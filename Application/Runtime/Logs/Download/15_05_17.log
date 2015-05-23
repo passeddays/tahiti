@@ -1,0 +1,10 @@
+[ 2015-05-17T17:23:10+08:00 ] 127.0.0.1 /tahiti/index.php?s=/download/index/uploadpic
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000493s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000822s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000882s ]
+NOTIC: [2] move_uploaded_file(D:\XAMPP\htdocs\tahiti\Application\Download\Conf/../../upload/1431854590image/jpeg): failed to open stream: No such file or directory D:\XAMPP\htdocs\tahiti\Application\Download\Controller\IndexController.class.php 第 22 行.
+NOTIC: [2] move_uploaded_file(): Unable to move 'D:\XAMPP\tmp\php757A.tmp' to 'D:\XAMPP\htdocs\tahiti\Application\Download\Conf/../../upload/1431854590image/jpeg' D:\XAMPP\htdocs\tahiti\Application\Download\Controller\IndexController.class.php 第 22 行.
+

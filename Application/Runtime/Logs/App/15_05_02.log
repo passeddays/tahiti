@@ -1,0 +1,90 @@
+[ 2015-05-02T14:58:21+08:00 ] 127.0.0.1 /tahiti/index.php?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000366s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000582s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000625s ]
+SQL: SHOW COLUMNS FROM `t_club_base` [ RunTime:0.0618s ]
+SQL: SHOW COLUMNS FROM `t_club_event` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `t_club_detail` [ RunTime:0.0095s ]
+SQL: SHOW COLUMNS FROM `t_club_img` [ RunTime:0.0095s ]
+
+[ 2015-05-02T15:22:31+08:00 ] 127.0.0.1 /tahiti/index.php?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000516s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000697s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000753s ]
+SQL: SHOW COLUMNS FROM `t_club_base` [ RunTime:0.0079s ]
+SQL: SHOW COLUMNS FROM `t_club_event` [ RunTime:0.0071s ]
+SQL: SHOW COLUMNS FROM `t_club_detail` [ RunTime:0.0045s ]
+SQL: SHOW COLUMNS FROM `t_club_img` [ RunTime:0.0029s ]
+
+[ 2015-05-02T15:34:54+08:00 ] 127.0.0.1 /tahiti/index.php?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000360s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000587s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000632s ]
+SQL: SHOW COLUMNS FROM `t_club_base` [ RunTime:0.0045s ]
+SQL: SHOW COLUMNS FROM `t_club_event` [ RunTime:0.0042s ]
+SQL: SHOW COLUMNS FROM `t_club_detail` [ RunTime:0.0044s ]
+SQL: SHOW COLUMNS FROM `t_club_img` [ RunTime:0.0047s ]
+
+[ 2015-05-02T15:35:28+08:00 ] 127.0.0.1 /tahiti/index.php?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000323s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000476s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000516s ]
+SQL: SHOW COLUMNS FROM `t_club_base` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `t_club_event` [ RunTime:0.0073s ]
+SQL: SHOW COLUMNS FROM `t_club_detail` [ RunTime:0.0067s ]
+SQL: SHOW COLUMNS FROM `t_club_img` [ RunTime:0.0043s ]
+
+[ 2015-05-02T15:36:11+08:00 ] 127.0.0.1 /tahiti/index.php?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000323s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000465s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000503s ]
+SQL: SHOW COLUMNS FROM `t_club_base` [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `t_club_event` [ RunTime:0.0026s ]
+SQL: SHOW COLUMNS FROM `t_club_detail` [ RunTime:0.0026s ]
+SQL: SHOW COLUMNS FROM `t_club_img` [ RunTime:0.0027s ]
+
+[ 2015-05-02T15:37:39+08:00 ] 127.0.0.1 /tahiti/index.php?
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000567s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000867s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000942s ]
+SQL: SHOW COLUMNS FROM `t_club_base` [ RunTime:0.0044s ]
+SQL: SHOW COLUMNS FROM `t_club_event` [ RunTime:0.0039s ]
+SQL: SHOW COLUMNS FROM `t_club_detail` [ RunTime:0.0044s ]
+SQL: SHOW COLUMNS FROM `t_club_img` [ RunTime:0.0043s ]
+
+[ 2015-05-02T23:30:56+08:00 ] 127.0.0.1 /tahiti/index.php?s=/./Manage/changepwd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000373s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000472s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000511s ]
+ERR: 无法加载控制器:.
+
+[ 2015-05-02T23:31:13+08:00 ] 127.0.0.1 /tahiti/index.php?s=/./Manage/clublist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000313s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000540s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000585s ]
+ERR: 无法加载控制器:.
+

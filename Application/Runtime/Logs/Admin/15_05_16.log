@@ -1,0 +1,724 @@
+[ 2015-05-16T11:17:44+08:00 ] 127.0.0.1 /tahiti/index.php?s=/admin/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.009273s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.018584s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.014761s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.033570s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000108s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000236s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.060433s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.060547s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.007375s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007455s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.008682s ]
+INFO: [ app_end ] --END-- [ RunTime:0.008789s ]
+
+[ 2015-05-16T11:17:46+08:00 ] 127.0.0.1 /tahiti/index.php?s=/Admin/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000344s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000464s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000564s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001090s ]
+SQL: SHOW COLUMNS FROM `t_admin_user` [ RunTime:0.0485s ]
+SQL: SELECT admin_user_pwd as passwd FROM `t_admin_user` WHERE ( admin_user_name = 'admin' )  [ RunTime:0.0020s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\XAMPP\htdocs\tahiti\ThinkPHP\Common\functions.php 第 1263 行.
+
+[ 2015-05-16T11:17:46+08:00 ] 127.0.0.1 /tahiti/index.php?s=/Admin/manage/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000495s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000711s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000844s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001651s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\XAMPP\htdocs\tahiti\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] Undefined index: zh-CN D:\XAMPP\htdocs\tahiti\Application\Admin\Controller\ManageController.class.php 第 16 行.
+
+[ 2015-05-16T11:17:46+08:00 ] 127.0.0.1 /tahiti/index.php?s=/admin/manage/clublist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000437s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000652s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000635s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001374s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\XAMPP\htdocs\tahiti\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] Undefined index: zh-CN D:\XAMPP\htdocs\tahiti\Application\Admin\Controller\ManageController.class.php 第 16 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000115s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016010s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016055s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000256s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000286s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000534s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000588s ]
+
+[ 2015-05-16T11:17:47+08:00 ] 127.0.0.1 /tahiti/index.php?s=/admin/manage/getclublist&current_page=1&count_per_page=10&club_id=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000342s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000513s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000502s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001077s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\XAMPP\htdocs\tahiti\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] Undefined index: zh-CN D:\XAMPP\htdocs\tahiti\Application\Admin\Controller\ManageController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `t_club_base` [ RunTime:0.0174s ]
+NOTIC: [8] Undefined variable: cond D:\XAMPP\htdocs\tahiti\Application\Admin\Controller\ManageController.class.php 第 95 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `t_club_base` LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: cond D:\XAMPP\htdocs\tahiti\Application\Admin\Controller\ManageController.class.php 第 97 行.
+SQL: SELECT * FROM `t_club_base` LIMIT 0,10   [ RunTime:0.0009s ]
+NOTIC: [8] Undefined variable: cond D:\XAMPP\htdocs\tahiti\Application\Admin\Controller\ManageController.class.php 第 98 行.
+SQL: select b.club_id, b.club_name, b.club_type, c.city_name as club_city from t_club_base b,t_club_city c where b.club_city = c.city_id  limit 0,10 [ RunTime:0.0019s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001438s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001548s ]
+
+[ 2015-05-16T11:18:41+08:00 ] 127.0.0.1 /tahiti/index.php?s=/admin/manage/clublist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000394s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000589s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000574s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001225s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\XAMPP\htdocs\tahiti\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] Undefined index: zh-CN D:\XAMPP\htdocs\tahiti\Application\Admin\Controller\ManageController.class.php 第 16 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000126s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007831s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007872s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000295s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000327s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000615s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000660s ]
+
+[ 2015-05-16T11:18:42+08:00 ] 127.0.0.1 /tahiti/index.php?s=/admin/manage/getclublist&current_page=1&count_per_page=10&club_id=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000313s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000461s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000442s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000961s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\XAMPP\htdocs\tahiti\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] Undefined index: zh-CN D:\XAMPP\htdocs\tahiti\Application\Admin\Controller\ManageController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `t_club_base` [ RunTime:0.0047s ]
+NOTIC: [8] Undefined variable: cond D:\XAMPP\htdocs\tahiti\Application\Admin\Controller\ManageController.class.php 第 95 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `t_club_base` LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined variable: cond D:\XAMPP\htdocs\tahiti\Application\Admin\Controller\ManageController.class.php 第 97 行.
+SQL: SELECT * FROM `t_club_base` LIMIT 0,10   [ RunTime:0.0009s ]
+NOTIC: [8] Undefined variable: cond D:\XAMPP\htdocs\tahiti\Application\Admin\Controller\ManageController.class.php 第 98 行.
+SQL: select b.club_id, b.club_name, b.club_type, c.city_name as club_city from t_club_base b,t_club_city c where b.club_city = c.city_id  limit 0,10 [ RunTime:0.0008s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001448s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001545s ]
+
+[ 2015-05-16T11:18:48+08:00 ] 127.0.0.1 /tahiti/index.php?s=/admin/manage/getclublist&current_page=1&count_per_page=10&club_id=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000376s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000554s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000514s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001139s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\XAMPP\htdocs\tahiti\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] Undefined index: zh-CN D:\XAMPP\htdocs\tahiti\Application\Admin\Controller\ManageController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `t_club_base` [ RunTime:0.0019s ]
+NOTIC: [8] Undefined variable: cond D:\XAMPP\htdocs\tahiti\Application\Admin\Controller\ManageController.class.php 第 95 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `t_club_base` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: cond D:\XAMPP\htdocs\tahiti\Application\Admin\Controller\ManageController.class.php 第 97 行.
+SQL: SELECT * FROM `t_club_base` LIMIT 0,10   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: cond D:\XAMPP\htdocs\tahiti\Application\Admin\Controller\ManageController.class.php 第 98 行.
+SQL: select b.club_id, b.club_name, b.club_type, c.city_name as club_city from t_club_base b,t_club_city c where b.club_city = c.city_id  limit 0,10 [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000649s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000686s ]
+
+[ 2015-05-16T11:20:53+08:00 ] 127.0.0.1 /tahiti/index.php?s=/admin/manage/getclublist&current_page=1&count_per_page=10&club_id=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000352s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000557s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000529s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001149s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\XAMPP\htdocs\tahiti\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] Undefined index: zh-CN D:\XAMPP\htdocs\tahiti\Application\Admin\Controller\ManageController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `t_club_base` [ RunTime:0.0045s ]
+NOTIC: [8] Undefined variable: cond D:\XAMPP\htdocs\tahiti\Application\Admin\Controller\ManageController.class.php 第 95 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `t_club_base` LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined variable: cond D:\XAMPP\htdocs\tahiti\Application\Admin\Controller\ManageController.class.php 第 97 行.
+SQL: SELECT * FROM `t_club_base` LIMIT 0,10   [ RunTime:0.0008s ]
+NOTIC: [8] Undefined variable: cond D:\XAMPP\htdocs\tahiti\Application\Admin\Controller\ManageController.class.php 第 98 行.
+SQL: select b.club_id, b.club_name, b.club_type, c.city_name as club_city from t_club_base b,t_club_city c where b.club_city = c.city_id  limit 0,10 [ RunTime:0.0007s ]
+NOTIC: [8] Undefined variable: Think D:\XAMPP\htdocs\tahiti\Application\Admin\Controller\ManageController.class.php 第 107 行.
+NOTIC: [8] Undefined variable: Think D:\XAMPP\htdocs\tahiti\Application\Admin\Controller\ManageController.class.php 第 107 行.
+NOTIC: [8] Undefined variable: Think D:\XAMPP\htdocs\tahiti\Application\Admin\Controller\ManageController.class.php 第 107 行.
+NOTIC: [8] Undefined variable: Think D:\XAMPP\htdocs\tahiti\Application\Admin\Controller\ManageController.class.php 第 107 行.
+NOTIC: [8] Undefined variable: Think D:\XAMPP\htdocs\tahiti\Application\Admin\Controller\ManageController.class.php 第 107 行.
+NOTIC: [8] Undefined variable: Think D:\XAMPP\htdocs\tahiti\Application\Admin\Controller\ManageController.class.php 第 107 行.
+NOTIC: [8] Undefined variable: Think D:\XAMPP\htdocs\tahiti\Application\Admin\Controller\ManageController.class.php 第 107 行.
+NOTIC: [8] Undefined variable: Think D:\XAMPP\htdocs\tahiti\Application\Admin\Controller\ManageController.class.php 第 107 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001640s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001739s ]
+
+[ 2015-05-16T11:25:34+08:00 ] 127.0.0.1 /tahiti/index.php?s=/admin/manage/getclublist&current_page=1&count_per_page=10&club_id=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000366s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000605s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000543s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001217s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\XAMPP\htdocs\tahiti\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] Undefined index: zh-CN D:\XAMPP\htdocs\tahiti\Application\Admin\Controller\ManageController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `t_club_base` [ RunTime:0.0047s ]
+NOTIC: [8] Undefined variable: cond D:\XAMPP\htdocs\tahiti\Application\Admin\Controller\ManageController.class.php 第 95 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `t_club_base` LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined variable: cond D:\XAMPP\htdocs\tahiti\Application\Admin\Controller\ManageController.class.php 第 97 行.
+SQL: SELECT * FROM `t_club_base` LIMIT 0,10   [ RunTime:0.0009s ]
+NOTIC: [8] Undefined variable: cond D:\XAMPP\htdocs\tahiti\Application\Admin\Controller\ManageController.class.php 第 98 行.
+SQL: select b.club_id, b.club_name, b.club_type, c.city_name as club_city from t_club_base b,t_club_city c where b.club_city = c.city_id  limit 0,10 [ RunTime:0.0007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001632s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001727s ]
+
+[ 2015-05-16T11:26:36+08:00 ] 127.0.0.1 /tahiti/index.php?s=/admin/manage/getclublist&current_page=1&count_per_page=10&club_id=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000444s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000482s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000452s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001002s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\XAMPP\htdocs\tahiti\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] Undefined index: zh-CN D:\XAMPP\htdocs\tahiti\Application\Admin\Controller\ManageController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `t_club_base` [ RunTime:0.0032s ]
+NOTIC: [8] Undefined variable: cond D:\XAMPP\htdocs\tahiti\Application\Admin\Controller\ManageController.class.php 第 95 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `t_club_base` LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: cond D:\XAMPP\htdocs\tahiti\Application\Admin\Controller\ManageController.class.php 第 97 行.
+SQL: SELECT * FROM `t_club_base` LIMIT 0,10   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined variable: cond D:\XAMPP\htdocs\tahiti\Application\Admin\Controller\ManageController.class.php 第 98 行.
+SQL: select b.club_id, b.club_name, b.club_type, c.city_name as club_city from t_club_base b,t_club_city c where b.club_city = c.city_id  limit 0,10 [ RunTime:0.0005s ]
+
+[ 2015-05-16T11:28:04+08:00 ] 127.0.0.1 /tahiti/index.php?s=/admin/login/logout
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000365s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000582s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000505s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001149s ]
+
+[ 2015-05-16T11:28:04+08:00 ] 127.0.0.1 /tahiti/index.php?s=/Admin/login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000368s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000493s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000554s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001105s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000028s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000065s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005232s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005272s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000317s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000347s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000580s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000611s ]
+
+[ 2015-05-16T11:28:13+08:00 ] 127.0.0.1 /tahiti/index.php?s=/Admin/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000369s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000531s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000518s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001115s ]
+SQL: SHOW COLUMNS FROM `t_admin_user` [ RunTime:0.0043s ]
+SQL: SELECT admin_user_pwd as passwd FROM `t_admin_user` WHERE ( admin_user_name = 'admin' )  [ RunTime:0.0006s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\XAMPP\htdocs\tahiti\ThinkPHP\Common\functions.php 第 1263 行.
+
+[ 2015-05-16T11:28:13+08:00 ] 127.0.0.1 /tahiti/index.php?s=/Admin/manage/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000744s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001105s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001059s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002304s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\XAMPP\htdocs\tahiti\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] Undefined index: zh-CN D:\XAMPP\htdocs\tahiti\Application\Admin\Controller\ManageController.class.php 第 16 行.
+
+[ 2015-05-16T11:28:13+08:00 ] 127.0.0.1 /tahiti/index.php?s=/admin/manage/clublist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000755s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001105s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001064s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002308s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\XAMPP\htdocs\tahiti\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] Undefined index: zh-CN D:\XAMPP\htdocs\tahiti\Application\Admin\Controller\ManageController.class.php 第 16 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000170s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000255s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016496s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016592s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000673s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000758s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001226s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001331s ]
+
+[ 2015-05-16T11:28:14+08:00 ] 127.0.0.1 /tahiti/index.php?s=/admin/manage/getclublist&current_page=1&count_per_page=10&club_id=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000302s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000454s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000437s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000946s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\XAMPP\htdocs\tahiti\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] Undefined index: zh-CN D:\XAMPP\htdocs\tahiti\Application\Admin\Controller\ManageController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `t_club_base` [ RunTime:0.0019s ]
+NOTIC: [8] Undefined variable: cond D:\XAMPP\htdocs\tahiti\Application\Admin\Controller\ManageController.class.php 第 95 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `t_club_base` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: cond D:\XAMPP\htdocs\tahiti\Application\Admin\Controller\ManageController.class.php 第 97 行.
+SQL: SELECT * FROM `t_club_base` LIMIT 0,10   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: cond D:\XAMPP\htdocs\tahiti\Application\Admin\Controller\ManageController.class.php 第 98 行.
+SQL: select b.club_id, b.club_name, b.club_type, c.city_name as club_city from t_club_base b,t_club_city c where b.club_city = c.city_id  limit 0,10 [ RunTime:0.0003s ]
+
+[ 2015-05-16T11:29:04+08:00 ] 127.0.0.1 /tahiti/index.php?s=/admin/manage/getclublist&current_page=1&count_per_page=10&club_id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000571s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000794s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000822s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001719s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\XAMPP\htdocs\tahiti\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] Undefined index: zh-CN D:\XAMPP\htdocs\tahiti\Application\Admin\Controller\ManageController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `t_club_base` [ RunTime:0.0050s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%2% ) LIMIT 1' at line 1
+
+[ 2015-05-16T11:29:07+08:00 ] 127.0.0.1 /tahiti/index.php?s=/admin/manage/getclublist&current_page=1&count_per_page=10&club_id=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000544s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000731s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000659s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001478s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\XAMPP\htdocs\tahiti\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] Undefined index: zh-CN D:\XAMPP\htdocs\tahiti\Application\Admin\Controller\ManageController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `t_club_base` [ RunTime:0.0047s ]
+NOTIC: [8] Undefined variable: cond D:\XAMPP\htdocs\tahiti\Application\Admin\Controller\ManageController.class.php 第 95 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `t_club_base` LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: cond D:\XAMPP\htdocs\tahiti\Application\Admin\Controller\ManageController.class.php 第 97 行.
+SQL: SELECT * FROM `t_club_base` LIMIT 0,10   [ RunTime:0.0008s ]
+NOTIC: [8] Undefined variable: cond D:\XAMPP\htdocs\tahiti\Application\Admin\Controller\ManageController.class.php 第 98 行.
+SQL: select b.club_id, b.club_name, b.club_type, c.city_name as club_city from t_club_base b,t_club_city c where b.club_city = c.city_id  limit 0,10 [ RunTime:0.0007s ]
+
+[ 2015-05-16T11:30:39+08:00 ] 127.0.0.1 /tahiti/index.php?s=/admin/manage/clublist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000406s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000601s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000771s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001434s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\XAMPP\htdocs\tahiti\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] Undefined index: zh-CN D:\XAMPP\htdocs\tahiti\Application\Admin\Controller\ManageController.class.php 第 16 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000123s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007446s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007484s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000306s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000337s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000562s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000596s ]
+
+[ 2015-05-16T11:30:40+08:00 ] 127.0.0.1 /tahiti/index.php?s=/admin/manage/getclublist&current_page=1&count_per_page=10&club_id=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000405s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000508s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000657s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001222s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\XAMPP\htdocs\tahiti\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] Undefined index: zh-CN D:\XAMPP\htdocs\tahiti\Application\Admin\Controller\ManageController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `t_club_base` [ RunTime:0.0046s ]
+NOTIC: [8] Undefined variable: cond D:\XAMPP\htdocs\tahiti\Application\Admin\Controller\ManageController.class.php 第 95 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `t_club_base` LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined variable: cond D:\XAMPP\htdocs\tahiti\Application\Admin\Controller\ManageController.class.php 第 97 行.
+SQL: SELECT * FROM `t_club_base` LIMIT 0,10   [ RunTime:0.0009s ]
+NOTIC: [8] Undefined variable: cond D:\XAMPP\htdocs\tahiti\Application\Admin\Controller\ManageController.class.php 第 98 行.
+SQL: select b.club_id, b.club_name, b.club_type, c.city_name as club_city from t_club_base b,t_club_city c where b.club_city = c.city_id  limit 0,10 [ RunTime:0.0008s ]
+
+[ 2015-05-16T11:30:42+08:00 ] 127.0.0.1 /tahiti/index.php?s=/admin/manage/clublist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000463s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000543s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000796s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001403s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\XAMPP\htdocs\tahiti\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] Undefined index: zh-CN D:\XAMPP\htdocs\tahiti\Application\Admin\Controller\ManageController.class.php 第 16 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000107s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007080s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007116s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000261s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000292s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000493s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000526s ]
+
+[ 2015-05-16T11:30:44+08:00 ] 127.0.0.1 /tahiti/index.php?s=/admin/manage/getclublist&current_page=1&count_per_page=10&club_id=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000401s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000571s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000793s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001426s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\XAMPP\htdocs\tahiti\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] Undefined index: zh-CN D:\XAMPP\htdocs\tahiti\Application\Admin\Controller\ManageController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `t_club_base` [ RunTime:0.0047s ]
+NOTIC: [8] Undefined variable: cond D:\XAMPP\htdocs\tahiti\Application\Admin\Controller\ManageController.class.php 第 95 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `t_club_base` LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined variable: cond D:\XAMPP\htdocs\tahiti\Application\Admin\Controller\ManageController.class.php 第 97 行.
+SQL: SELECT * FROM `t_club_base` LIMIT 0,10   [ RunTime:0.0009s ]
+NOTIC: [8] Undefined variable: cond D:\XAMPP\htdocs\tahiti\Application\Admin\Controller\ManageController.class.php 第 98 行.
+SQL: select b.club_id, b.club_name, b.club_type, c.city_name as club_city from t_club_base b,t_club_city c where b.club_city = c.city_id  limit 0,10 [ RunTime:0.0008s ]
+
+[ 2015-05-16T11:30:47+08:00 ] 127.0.0.1 /tahiti/index.php?s=/admin/manage/getclublist&current_page=1&count_per_page=10&club_id=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000458s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000638s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000897s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001616s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\XAMPP\htdocs\tahiti\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] Undefined index: zh-CN D:\XAMPP\htdocs\tahiti\Application\Admin\Controller\ManageController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `t_club_base` [ RunTime:0.0045s ]
+NOTIC: [8] Undefined variable: cond D:\XAMPP\htdocs\tahiti\Application\Admin\Controller\ManageController.class.php 第 95 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `t_club_base` LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: cond D:\XAMPP\htdocs\tahiti\Application\Admin\Controller\ManageController.class.php 第 97 行.
+SQL: SELECT * FROM `t_club_base` LIMIT 0,10   [ RunTime:0.0008s ]
+NOTIC: [8] Undefined variable: cond D:\XAMPP\htdocs\tahiti\Application\Admin\Controller\ManageController.class.php 第 98 行.
+SQL: select b.club_id, b.club_name, b.club_type, c.city_name as club_city from t_club_base b,t_club_city c where b.club_city = c.city_id  limit 0,10 [ RunTime:0.0007s ]
+
+[ 2015-05-16T11:30:48+08:00 ] 127.0.0.1 /tahiti/index.php?s=/admin/manage/getclublist&current_page=1&count_per_page=10&club_id=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000387s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000517s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000689s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001267s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\XAMPP\htdocs\tahiti\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] Undefined index: zh-CN D:\XAMPP\htdocs\tahiti\Application\Admin\Controller\ManageController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `t_club_base` [ RunTime:0.0019s ]
+NOTIC: [8] Undefined variable: cond D:\XAMPP\htdocs\tahiti\Application\Admin\Controller\ManageController.class.php 第 95 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `t_club_base` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: cond D:\XAMPP\htdocs\tahiti\Application\Admin\Controller\ManageController.class.php 第 97 行.
+SQL: SELECT * FROM `t_club_base` LIMIT 0,10   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: cond D:\XAMPP\htdocs\tahiti\Application\Admin\Controller\ManageController.class.php 第 98 行.
+SQL: select b.club_id, b.club_name, b.club_type, c.city_name as club_city from t_club_base b,t_club_city c where b.club_city = c.city_id  limit 0,10 [ RunTime:0.0003s ]
+
+[ 2015-05-16T11:30:50+08:00 ] 127.0.0.1 /tahiti/index.php?s=/admin/manage/getclublist&current_page=1&count_per_page=10&club_id=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000639s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000826s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001096s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002033s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\XAMPP\htdocs\tahiti\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] Undefined index: zh-CN D:\XAMPP\htdocs\tahiti\Application\Admin\Controller\ManageController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `t_club_base` [ RunTime:0.0047s ]
+NOTIC: [8] Undefined variable: cond D:\XAMPP\htdocs\tahiti\Application\Admin\Controller\ManageController.class.php 第 95 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `t_club_base` LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: cond D:\XAMPP\htdocs\tahiti\Application\Admin\Controller\ManageController.class.php 第 97 行.
+SQL: SELECT * FROM `t_club_base` LIMIT 0,10   [ RunTime:0.0008s ]
+NOTIC: [8] Undefined variable: cond D:\XAMPP\htdocs\tahiti\Application\Admin\Controller\ManageController.class.php 第 98 行.
+SQL: select b.club_id, b.club_name, b.club_type, c.city_name as club_city from t_club_base b,t_club_city c where b.club_city = c.city_id  limit 0,10 [ RunTime:0.0006s ]
+
+[ 2015-05-16T11:31:43+08:00 ] 127.0.0.1 /tahiti/index.php?s=/admin/manage/getclublist&current_page=1&count_per_page=10&club_id=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000386s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000510s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000708s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001278s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\XAMPP\htdocs\tahiti\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] Undefined index: zh-CN D:\XAMPP\htdocs\tahiti\Application\Admin\Controller\ManageController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `t_club_base` [ RunTime:0.0019s ]
+NOTIC: [8] Undefined variable: cond D:\XAMPP\htdocs\tahiti\Application\Admin\Controller\ManageController.class.php 第 95 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `t_club_base` LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: cond D:\XAMPP\htdocs\tahiti\Application\Admin\Controller\ManageController.class.php 第 97 行.
+SQL: SELECT * FROM `t_club_base` LIMIT 0,10   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: cond D:\XAMPP\htdocs\tahiti\Application\Admin\Controller\ManageController.class.php 第 98 行.
+SQL: select b.club_id, b.club_name, b.club_type, c.city_name as club_city from t_club_base b,t_club_city c where b.club_city = c.city_id  limit 0,10 [ RunTime:0.0003s ]
+
+[ 2015-05-16T11:31:45+08:00 ] 127.0.0.1 /tahiti/index.php?s=/admin/manage/getclublist&current_page=1&count_per_page=10&club_id=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000591s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000738s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000985s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001820s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\XAMPP\htdocs\tahiti\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] Undefined index: zh-CN D:\XAMPP\htdocs\tahiti\Application\Admin\Controller\ManageController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `t_club_base` [ RunTime:0.0045s ]
+NOTIC: [8] Undefined variable: cond D:\XAMPP\htdocs\tahiti\Application\Admin\Controller\ManageController.class.php 第 95 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `t_club_base` LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined variable: cond D:\XAMPP\htdocs\tahiti\Application\Admin\Controller\ManageController.class.php 第 97 行.
+SQL: SELECT * FROM `t_club_base` LIMIT 0,10   [ RunTime:0.0008s ]
+NOTIC: [8] Undefined variable: cond D:\XAMPP\htdocs\tahiti\Application\Admin\Controller\ManageController.class.php 第 98 行.
+SQL: select b.club_id, b.club_name, b.club_type, c.city_name as club_city from t_club_base b,t_club_city c where b.club_city = c.city_id  limit 0,10 [ RunTime:0.0007s ]
+
+[ 2015-05-16T11:32:10+08:00 ] 127.0.0.1 /tahiti/index.php?s=/admin/manage/getclublist&current_page=1&count_per_page=10&club_id=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000502s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000713s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000963s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001764s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\XAMPP\htdocs\tahiti\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] Undefined index: zh-CN D:\XAMPP\htdocs\tahiti\Application\Admin\Controller\ManageController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `t_club_base` [ RunTime:0.0045s ]
+NOTIC: [8] Undefined variable: cond D:\XAMPP\htdocs\tahiti\Application\Admin\Controller\ManageController.class.php 第 95 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `t_club_base` LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: cond D:\XAMPP\htdocs\tahiti\Application\Admin\Controller\ManageController.class.php 第 97 行.
+SQL: SELECT * FROM `t_club_base` LIMIT 0,10   [ RunTime:0.0008s ]
+NOTIC: [8] Undefined variable: cond D:\XAMPP\htdocs\tahiti\Application\Admin\Controller\ManageController.class.php 第 98 行.
+SQL: select b.club_id, b.club_name, b.club_type, c.city_name as club_city from t_club_base b,t_club_city c where b.club_city = c.city_id  limit 0,10 [ RunTime:0.0007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001537s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001631s ]
+
+[ 2015-05-16T11:33:31+08:00 ] 127.0.0.1 /tahiti/index.php?s=/admin/manage/getclublist&current_page=1&count_per_page=10&club_id=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000417s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000628s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000821s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001511s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\XAMPP\htdocs\tahiti\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] Undefined index: zh-CN D:\XAMPP\htdocs\tahiti\Application\Admin\Controller\ManageController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `t_club_base` [ RunTime:0.0046s ]
+NOTIC: [8] Undefined variable: cond D:\XAMPP\htdocs\tahiti\Application\Admin\Controller\ManageController.class.php 第 95 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `t_club_base` LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: cond D:\XAMPP\htdocs\tahiti\Application\Admin\Controller\ManageController.class.php 第 97 行.
+SQL: SELECT * FROM `t_club_base` LIMIT 0,10   [ RunTime:0.0008s ]
+NOTIC: [8] Undefined variable: cond D:\XAMPP\htdocs\tahiti\Application\Admin\Controller\ManageController.class.php 第 98 行.
+SQL: select b.club_id, b.club_name, b.club_type, c.city_name as club_city from t_club_base b,t_club_city c where b.club_city = c.city_id  limit 0,10 [ RunTime:0.0007s ]
+
+[ 2015-05-16T11:33:42+08:00 ] 127.0.0.1 /tahiti/index.php?s=/admin/manage/getclublist&current_page=1&count_per_page=10&club_id=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000465s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000663s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000955s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001704s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\XAMPP\htdocs\tahiti\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] Undefined index: zh-CN D:\XAMPP\htdocs\tahiti\Application\Admin\Controller\ManageController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `t_club_base` [ RunTime:0.0046s ]
+NOTIC: [8] Undefined variable: cond D:\XAMPP\htdocs\tahiti\Application\Admin\Controller\ManageController.class.php 第 95 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `t_club_base` LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: cond D:\XAMPP\htdocs\tahiti\Application\Admin\Controller\ManageController.class.php 第 97 行.
+SQL: SELECT * FROM `t_club_base` LIMIT 0,10   [ RunTime:0.0008s ]
+NOTIC: [8] Undefined variable: cond D:\XAMPP\htdocs\tahiti\Application\Admin\Controller\ManageController.class.php 第 98 行.
+SQL: select b.club_id, b.club_name, b.club_type, c.city_name as club_city from t_club_base b,t_club_city c where b.club_city = c.city_id  limit 0,10 [ RunTime:0.0006s ]
+
+[ 2015-05-16T11:33:48+08:00 ] 127.0.0.1 /tahiti/index.php?s=/admin/manage/getclublist&current_page=1&count_per_page=10&club_id=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000376s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000679s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001241s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\XAMPP\htdocs\tahiti\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] Undefined index: zh-CN D:\XAMPP\htdocs\tahiti\Application\Admin\Controller\ManageController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `t_club_base` [ RunTime:0.0047s ]
+NOTIC: [8] Undefined variable: cond D:\XAMPP\htdocs\tahiti\Application\Admin\Controller\ManageController.class.php 第 95 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `t_club_base` LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined variable: cond D:\XAMPP\htdocs\tahiti\Application\Admin\Controller\ManageController.class.php 第 97 行.
+SQL: SELECT * FROM `t_club_base` LIMIT 0,10   [ RunTime:0.0009s ]
+NOTIC: [8] Undefined variable: cond D:\XAMPP\htdocs\tahiti\Application\Admin\Controller\ManageController.class.php 第 98 行.
+SQL: select b.club_id, b.club_name, b.club_type, c.city_name as club_city from t_club_base b,t_club_city c where b.club_city = c.city_id  limit 0,10 [ RunTime:0.0007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001373s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001466s ]
+
+[ 2015-05-16T11:33:51+08:00 ] 127.0.0.1 /tahiti/index.php?s=/admin/manage/clublist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000322s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000467s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000620s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001148s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\XAMPP\htdocs\tahiti\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] Undefined index: zh-CN D:\XAMPP\htdocs\tahiti\Application\Admin\Controller\ManageController.class.php 第 16 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000114s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000155s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007438s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007476s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000294s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000323s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000483s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000517s ]
+
+[ 2015-05-16T11:33:52+08:00 ] 127.0.0.1 /tahiti/index.php?s=/admin/manage/getclublist&current_page=1&count_per_page=10&club_id=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000406s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000867s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001095s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002067s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\XAMPP\htdocs\tahiti\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] Undefined index: zh-CN D:\XAMPP\htdocs\tahiti\Application\Admin\Controller\ManageController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `t_club_base` [ RunTime:0.0046s ]
+NOTIC: [8] Undefined variable: cond D:\XAMPP\htdocs\tahiti\Application\Admin\Controller\ManageController.class.php 第 95 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `t_club_base` LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined variable: cond D:\XAMPP\htdocs\tahiti\Application\Admin\Controller\ManageController.class.php 第 97 行.
+SQL: SELECT * FROM `t_club_base` LIMIT 0,10   [ RunTime:0.0008s ]
+NOTIC: [8] Undefined variable: cond D:\XAMPP\htdocs\tahiti\Application\Admin\Controller\ManageController.class.php 第 98 行.
+SQL: select b.club_id, b.club_name, b.club_type, c.city_name as club_city from t_club_base b,t_club_city c where b.club_city = c.city_id  limit 0,10 [ RunTime:0.0007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001291s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001376s ]
+
+[ 2015-05-16T11:34:04+08:00 ] 127.0.0.1 /tahiti/index.php?s=/admin/manage/clublist.html&l=english
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000419s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000527s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000744s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001334s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\XAMPP\htdocs\tahiti\ThinkPHP\Common\functions.php 第 1263 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000122s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007265s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007302s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000234s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000265s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000471s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000506s ]
+
+[ 2015-05-16T11:34:05+08:00 ] 127.0.0.1 /tahiti/index.php?s=/admin/manage/getclublist&current_page=1&count_per_page=10&club_id=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000389s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000513s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000690s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001267s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\XAMPP\htdocs\tahiti\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `t_club_base` [ RunTime:0.0047s ]
+NOTIC: [8] Undefined variable: cond D:\XAMPP\htdocs\tahiti\Application\Admin\Controller\ManageController.class.php 第 95 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `t_club_base` LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined variable: cond D:\XAMPP\htdocs\tahiti\Application\Admin\Controller\ManageController.class.php 第 97 行.
+SQL: SELECT * FROM `t_club_base` LIMIT 0,10   [ RunTime:0.0009s ]
+NOTIC: [8] Undefined variable: cond D:\XAMPP\htdocs\tahiti\Application\Admin\Controller\ManageController.class.php 第 98 行.
+SQL: select b.club_id, b.club_name, b.club_type, c.city_name as club_city from t_club_base b,t_club_city c where b.club_city = c.city_id  limit 0,10 [ RunTime:0.0008s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001473s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001572s ]
+
+[ 2015-05-16T11:34:07+08:00 ] 127.0.0.1 /tahiti/index.php?s=/admin/manage/clublist.html&l=english&l=chinese
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000509s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000732s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000974s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001804s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\XAMPP\htdocs\tahiti\ThinkPHP\Common\functions.php 第 1263 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000111s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007412s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007461s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000270s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000300s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000531s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000571s ]
+
+[ 2015-05-16T11:34:08+08:00 ] 127.0.0.1 /tahiti/index.php?s=/admin/manage/getclublist&current_page=1&count_per_page=10&club_id=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000348s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000460s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000780s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001316s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\XAMPP\htdocs\tahiti\ThinkPHP\Common\functions.php 第 1263 行.
+SQL: SHOW COLUMNS FROM `t_club_base` [ RunTime:0.0046s ]
+NOTIC: [8] Undefined variable: cond D:\XAMPP\htdocs\tahiti\Application\Admin\Controller\ManageController.class.php 第 95 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `t_club_base` LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined variable: cond D:\XAMPP\htdocs\tahiti\Application\Admin\Controller\ManageController.class.php 第 97 行.
+SQL: SELECT * FROM `t_club_base` LIMIT 0,10   [ RunTime:0.0009s ]
+NOTIC: [8] Undefined variable: cond D:\XAMPP\htdocs\tahiti\Application\Admin\Controller\ManageController.class.php 第 98 行.
+SQL: select b.club_id, b.club_name, b.club_type, c.city_name as club_city from t_club_base b,t_club_city c where b.club_city = c.city_id  limit 0,10 [ RunTime:0.0008s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001382s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001479s ]
+

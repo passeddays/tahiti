@@ -1,0 +1,72 @@
+[ 2015-05-23T15:28:12+08:00 ] ::1 /tahiti/index.php/admin/login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.009421s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.010692s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010811s ]
+SQL: SHOW COLUMNS FROM `t_club_base` [ RunTime:0.0396s ]
+SQL: SHOW COLUMNS FROM `t_club_event` [ RunTime:0.0223s ]
+SQL: SHOW COLUMNS FROM `t_club_detail` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `t_club_img` [ RunTime:0.0074s ]
+
+[ 2015-05-23T15:28:15+08:00 ] ::1 /tahiti/index.php/admin/login/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000327s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000474s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000512s ]
+SQL: SHOW COLUMNS FROM `t_club_base` [ RunTime:0.0059s ]
+SQL: SHOW COLUMNS FROM `t_club_event` [ RunTime:0.0052s ]
+SQL: SHOW COLUMNS FROM `t_club_detail` [ RunTime:0.0053s ]
+SQL: SHOW COLUMNS FROM `t_club_img` [ RunTime:0.0055s ]
+
+[ 2015-05-23T15:28:23+08:00 ] ::1 /tahiti/index.php/admin/login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000662s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000845s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000915s ]
+SQL: SHOW COLUMNS FROM `t_club_base` [ RunTime:0.0063s ]
+SQL: SHOW COLUMNS FROM `t_club_event` [ RunTime:0.0054s ]
+SQL: SHOW COLUMNS FROM `t_club_detail` [ RunTime:0.0056s ]
+SQL: SHOW COLUMNS FROM `t_club_img` [ RunTime:0.0054s ]
+
+[ 2015-05-23T15:28:41+08:00 ] ::1 /tahiti/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000332s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000505s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000548s ]
+SQL: SHOW COLUMNS FROM `t_club_base` [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `t_club_event` [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `t_club_detail` [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `t_club_img` [ RunTime:0.0022s ]
+
+[ 2015-05-23T15:29:02+08:00 ] ::1 /tahiti/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000364s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000521s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000559s ]
+SQL: SHOW COLUMNS FROM `t_club_base` [ RunTime:0.0059s ]
+SQL: SHOW COLUMNS FROM `t_club_event` [ RunTime:0.0054s ]
+SQL: SHOW COLUMNS FROM `t_club_detail` [ RunTime:0.0054s ]
+SQL: SHOW COLUMNS FROM `t_club_img` [ RunTime:0.0059s ]
+
+[ 2015-05-23T15:30:21+08:00 ] ::1 /tahiti/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000482s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000620s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000660s ]
+SQL: SHOW COLUMNS FROM `t_club_base` [ RunTime:0.0057s ]
+SQL: SHOW COLUMNS FROM `t_club_event` [ RunTime:0.0051s ]
+SQL: SHOW COLUMNS FROM `t_club_detail` [ RunTime:0.0052s ]
+SQL: SHOW COLUMNS FROM `t_club_img` [ RunTime:0.0056s ]
+
