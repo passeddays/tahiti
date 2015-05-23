@@ -56,7 +56,7 @@ class IndexController extends Controller {
                 'err_msg'=> 'file name is empty',
             ));
         }
-        $db = M('_count', 'download', 'mysql');
+        $db = M('count', 'download_', 'mysql');
         if($db->where('count>=1')->setDec('count',1)){
             $file = "$path/$img_name";
             header('Content-Type: application/force-download');
