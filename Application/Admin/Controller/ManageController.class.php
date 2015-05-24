@@ -145,7 +145,7 @@ class ManageController extends Controller {
         $cityObj = M('city', 't_club_');
         $base = $baseObj->where("club_id=%d", array($club_id))->select();
         $detail = $detailObj->where("club_id=%d", array($club_id))->select();
-        $detail['club_pic'] = "/thumb/".$detail['club_pic'];
+        $detail['club_thumb'] = "/thumb/".$detail['club_thumb'];
         $imgs = $imgObj->where("club_id=%d", array($club_id))->select();
         $events = $eventObj->where("club_id=%d", array($club_id))->select();
         $cityList = $cityObj->select();
