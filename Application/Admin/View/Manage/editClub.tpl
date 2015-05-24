@@ -16,7 +16,7 @@
   <li><a href="__APP__/admin/manage">{$Think.lang.club_list}</a></li>
   <li class="active">CLUB ID:{$data.club_id}</li>
 </ol>
-<form class="form-horizontal" action='__APP__/admin/manage/updateClub' method='post' >
+<form class="form-horizontal" action='__APP__/admin/manage/updateClub&cid={$data.club_id}' method='post' >
 	<div id="legend" class="">
 	    <legend class="">{$Think.lang.edit_club}</legend>
 	</div>
@@ -31,7 +31,15 @@
 	<div class="form-group">
 		<label class="control-label col-sm-2" for="club_type">{$Think.lang.club_type}</label>
 		<div class="col-sm-3">
-		    <input type="text" placeholder="" class="form-control" id='club_type' value='{$data.club_type}' name='club_type'>
+		    <!--<input type="text" placeholder="" class="form-control" id='club_type' value='{$data.club_type}' name='club_type'>-->
+		    <select id='club_type' class="form-control" name='club_type'>>
+		    	<foreach name='data.club_type_list' key='k' item='v'>
+		    		<if condition="intval($k) eq $data['club_type']">
+		    		<option value='{$k}' selected {$data.club_type}>{$v}</option>
+		    		<else /><option value='{$k}'>{$v}</option>
+		    		</if>
+		    	</foreach>
+		    </select>
 		    <p class="help-block"></p>
 		</div>
 	</div>
@@ -116,10 +124,12 @@
 
 	<div class="form-group">
 		<label class="control-label col-sm-2" for="club_logo">{$Think.lang.club_logo}</label>
+		<input type='hidden' name='club_thumb' id='club_thumb' value=''>
 		<div class="col-sm-3">
 			<div id="uploader-demo">
 			    <!--用来存放item-->
-			    <div id="fileList" class="uploader-list"></div>
+			    <!--<div id="fileList" class="uploader-list"></div>-->
+			    <img src="{$data.club_thumb}" alt="club logo" id='logo-img'>
 			    <div id="filePicker">选择图片</div>
 			</div>
 		</div>
@@ -282,7 +292,7 @@ var uploader = WebUploader.create({
     swf: '/static/js/Uploader.swf',
 
     // 文件接收服务端。
-    server: __APP__ +'/',
+    server: '__APP__/admin/manage/upload&upload_type=thumb&self_id={$data.club_id}',
 
     // 选择文件的按钮。可选。
     // 内部根据当前运行是创建，可能是input元素，也可能是flash.
@@ -291,9 +301,27 @@ var uploader = WebUploader.create({
     // 只允许选择图片文件。
     accept: {
         title: 'Images',
-        extensions: 'gif,jpg,jpeg,bmp,png',
+        extensions: 'gif,jpg,jpeg,png',
         mimeTypes: 'image/*'
     }
+});
+// 当有文件添加进来的时候
+uploader.on( 'fileQueued', function( file ) {
+	$img = $('#logo-img');
+    // 创建缩略图
+    // 如果为非图片文件，可以不用调用此方法。
+    // thumbnailWidth x thumbnailHeight 为 100 x 100
+    uploader.makeThumb( file, function( error, src ) {
+        if ( error ) {
+            $img.replaceWith('<span>不能预览</span>');
+            return;
+        }
+
+        $img.attr( 'src', src );
+    }, 100, 100 );
+});
+uploader.on('uploadSuccess', function (file, response) {
+	$('#club_thumb').val(response.data);
 });
 </script>
 </block>
