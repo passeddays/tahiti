@@ -154,8 +154,6 @@ class ManageController extends Controller {
         $res['imgs'] = $imgs;
         $res['events'] = $events;
         $res['club_type_list'] = $clubType = L('CLUB_TYPE_VAL');
-        // var_dump($res);exit();
-        //echo json_encode($res);exit();
         $this->assign('data', $res);
         $this->assign('citylist', $cityList);
         $this->display('./Manage/editClub');
@@ -232,7 +230,6 @@ class ManageController extends Controller {
 
 
     public function updateClub($cid){
-        var_dump($_POST);
         if(IS_POST){
             $baseFields = array(
                 'club_name' => I('post.club_name'),
@@ -257,7 +254,7 @@ class ManageController extends Controller {
             );
             $detailObj->where("club_id=".$cid)->setField($baseFields);
         }
-        
+        $this->redirect('admin/manage/editClub', array('club_id' => $cid));
     }
 
 }
