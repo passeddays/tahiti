@@ -150,7 +150,7 @@ class ManageController extends Controller {
         $events = $eventObj->where("club_id=%d", array($club_id))->select();
         $cityList = $cityObj->select();
         $res = array_merge($base[0], $detail[0]);
-        $res['club_pic'] = "/thumb/".$res['club_pic'];
+        $res['club_thumb'] = "/thumb/".$res['club_thumb'];
         $res['imgs'] = $imgs;
         $res['events'] = $events;
         $res['club_type_list'] = $clubType = L('CLUB_TYPE_VAL');
