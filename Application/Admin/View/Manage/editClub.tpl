@@ -129,7 +129,7 @@
 			<div id="uploader-demo">
 			    <!--用来存放item-->
 			    <!--<div id="fileList" class="uploader-list"></div>-->
-			    <img src="{$data.club_thumb}" alt="club logo" id='logo-img'>
+			    <img src="{$data.club_thumb}" alt="club logo" id='logo-img' style="max-width:200px;">
 			    <div id="filePicker">选择图片</div>
 			</div>
 		</div>
