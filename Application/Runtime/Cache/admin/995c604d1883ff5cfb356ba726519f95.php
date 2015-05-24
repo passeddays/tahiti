@@ -91,7 +91,7 @@
   <li><a href="/tahiti/index.php?s=/admin/manage"><?php echo (L("club_list")); ?></a></li>
   <li class="active">CLUB ID:<?php echo ($data["club_id"]); ?></li>
 </ol>
-<form class="form-horizontal" action='/tahiti/index.php?s=/admin/manage/updateClub' method='post' >
+<form class="form-horizontal" action='/tahiti/index.php?s=/admin/manage/updateClub&cid=<?php echo ($data["club_id"]); ?>' method='post' >
 	<div id="legend" class="">
 	    <legend class=""><?php echo (L("edit_club")); ?></legend>
 	</div>
@@ -106,7 +106,11 @@
 	<div class="form-group">
 		<label class="control-label col-sm-2" for="club_type"><?php echo (L("club_type")); ?></label>
 		<div class="col-sm-3">
-		    <input type="text" placeholder="" class="form-control" id='club_type' value='<?php echo ($data["club_type"]); ?>' name='club_type'>
+		    <!--<input type="text" placeholder="" class="form-control" id='club_type' value='<?php echo ($data["club_type"]); ?>' name='club_type'>-->
+		    <select id='club_type' class="form-control" name='club_type'>>
+		    	<?php if(is_array($data["club_type_list"])): foreach($data["club_type_list"] as $k=>$v): if(intval($k) == $data['club_type']): ?><option value='<?php echo ($k); ?>' selected <?php echo ($data["club_type"]); ?>><?php echo ($v); ?></option>
+		    		<?php else: ?><option value='<?php echo ($k); ?>'><?php echo ($v); ?></option><?php endif; endforeach; endif; ?>
+		    </select>
 		    <p class="help-block"></p>
 		</div>
 	</div>
@@ -189,10 +193,12 @@
 
 	<div class="form-group">
 		<label class="control-label col-sm-2" for="club_logo"><?php echo (L("club_logo")); ?></label>
+		<input type='hidden' name='club_thumb' id='club_thumb' value=''>
 		<div class="col-sm-3">
 			<div id="uploader-demo">
 			    <!--用来存放item-->
-			    <div id="fileList" class="uploader-list"></div>
+			    <!--<div id="fileList" class="uploader-list"></div>-->
+			    <img src="<?php echo ($data["club_thumb"]); ?>" alt="club logo" id='logo-img'>
 			    <div id="filePicker">选择图片</div>
 			</div>
 		</div>
@@ -358,12 +364,12 @@ var uploader = WebUploader.create({
 
 	// 选完文件后，是否自动上传。
     auto: true,
-    
+
     // swf文件路径
     swf: '/static/js/Uploader.swf',
 
     // 文件接收服务端。
-    server: 'http://webuploader.duapp.com/server/fileupload.php',
+    server: '/tahiti/index.php?s=/admin/manage/upload&upload_type=thumb&self_id=<?php echo ($data["club_id"]); ?>',
 
     // 选择文件的按钮。可选。
     // 内部根据当前运行是创建，可能是input元素，也可能是flash.
@@ -372,9 +378,27 @@ var uploader = WebUploader.create({
     // 只允许选择图片文件。
     accept: {
         title: 'Images',
-        extensions: 'gif,jpg,jpeg,bmp,png',
+        extensions: 'gif,jpg,jpeg,png',
         mimeTypes: 'image/*'
     }
+});
+// 当有文件添加进来的时候
+uploader.on( 'fileQueued', function( file ) {
+	$img = $('#logo-img');
+    // 创建缩略图
+    // 如果为非图片文件，可以不用调用此方法。
+    // thumbnailWidth x thumbnailHeight 为 100 x 100
+    uploader.makeThumb( file, function( error, src ) {
+        if ( error ) {
+            $img.replaceWith('<span>不能预览</span>');
+            return;
+        }
+
+        $img.attr( 'src', src );
+    }, 100, 100 );
+});
+uploader.on('uploadSuccess', function (file, response) {
+	$('#club_thumb').val(response.data);
 });
 </script>
 

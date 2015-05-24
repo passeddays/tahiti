@@ -6,7 +6,7 @@ class IndexController extends Controller {
     public function uploadpic(){
         $path = C('file_path');
         $filetype = $_FILES['img']['type'];
-        if (($filetype === 'image/gif') || ($filetype === 'image/jpeg') || ($filetype === 'image/png') || ($filetype === 'image/jpg')){
+        if (($filetype == 'image/gif') || ($filetype == 'image/jpeg') || ($filetype == 'image/png') || ($filetype == 'image/jpg')){
             if ($_FILES['img']['error'] > 0){
                 $ret = array(
                     'err_no' => 1,
@@ -15,12 +15,12 @@ class IndexController extends Controller {
                 );
             }else{
                 if($filetype == 'image/jpeg'){ 
-                    $type = '.jpg'; 
+                    $type = '.jpeg'; 
+                } 
+                if ($filetype == 'image/png') { 
+                    $type = '.png'; 
                 } 
                 if ($filetype == 'image/jpg') { 
-                    $type = '.jpg'; 
-                } 
-                if ($filetype == 'image/pjpeg') { 
                     $type = '.jpg'; 
                 } 
                 if($filetype == 'image/gif'){ 
