@@ -77,7 +77,7 @@ class ManageController extends Controller {
         $currentPage = I('get.current_page')?I('get.current_page'):1;
         $countPerPage = I('get.count_per_page')?I('get.count_per_page'):5;
         if(I('get.club_id')){
-            $cond = 'b.club_id = '.I('get.club_id').'';
+            $cond = 'b.club_id = '.intval(I('get.club_id')).'';
         }
         if(I('get.club_name')){
             $cond = 'b.club_name like "%'.I('get.club_name').'%"';
@@ -154,6 +154,7 @@ class ManageController extends Controller {
         $res['imgs'] = $imgs;
         $res['events'] = $events;
         $res['club_type_list'] = $clubType = L('CLUB_TYPE_VAL');
+        //var_dump($res);exit();
         $this->assign('data', $res);
         $this->assign('citylist', $cityList);
         $this->display('./Manage/editClub');
@@ -185,21 +186,15 @@ class ManageController extends Controller {
                 switch ($upload_type) {
                     case 'thumb':
                         $path = SERVER_PATH."/thumb";
-                        // $detailObj = M('detail', 't_club_');
-                        // $data['club_pic'] = $img_name;
-                        // $res = $detailObj->where("club_id=".$self_id)->setField($data);
                         break;
                     case 'event':
                         $path = SERVER_PATH."/poster";
-                        $eventObj = M('event', 't_club_');
-                        $data['event_id'] = $img_name;
-                        $eventObj->where("event_id=".$self_id)->setField($data);
                         break;
                     case 'img':
                         $path = SERVER_PATH."/img";
-                        $imgObj = M('img', 't_club_');
-                        $data['img_id'] = $img_name;
-                        $imgObj->where("img_id=".$self_id)->setField($data);
+                        // $imgObj = M('img', 't_club_');
+                        // $data['img_id'] = $img_name;
+                        // $imgObj->where("img_id=".$self_id)->setField($data);
                         break;
                     default:
                         $this->ajaxReturn(array(
@@ -257,4 +252,33 @@ class ManageController extends Controller {
         $this->redirect('admin/manage/editClub', array('club_id' => $cid));
     }
 
+    public function editEvent($event_id, $cid){
+        $eventObj = M('event', 't_club_');
+        $event = $eventObj->where("club_id=%d and event_id=%d", array($cid, $event_id))->select();
+        $res = $event[0];
+        // $res['event_poster'] = "/poster/".$res['event_poster'];
+        $res['club_name'] = $this->getClubNameById($cid);
+        $this->assign('data', $res);
+        $this->display('./Manage/editEvent');
+    }
+
+    public function getClubNameById($cid){
+        $baseObj = M('base', 't_club_');
+        $res = $baseObj->where("club_id=%d", array($cid))->select();
+        return $res[0]['club_name'];
+    }
+
+    public function updateEvent($event_id, $cid){
+        if(IS_POST){
+            $eventFields = array(
+                'event_name' => I('post.event_name'),
+                'event_brief'  => I('post.event_brief'),
+                'event_time'  => I('post.event_time'),
+                'event_poster'  => I('post.event_poster'),
+            );
+            $eventObj = M('event', 't_club_');
+            $res = $eventObj->where("club_id=%d and event_id=%d",array($cid, $event_id))->setField($eventFields);
+        }
+        $this->redirect('admin/manage/editClub', array('club_id' => $cid));
+    }
 }

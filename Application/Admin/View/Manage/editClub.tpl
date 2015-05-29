@@ -124,7 +124,7 @@
 
 	<div class="form-group">
 		<label class="control-label col-sm-2" for="club_logo">{$Think.lang.club_logo}</label>
-		<input type='hidden' name='club_thumb' id='club_thumb' value=''>
+		<input type='hidden' name='club_thumb' id='club_thumb' value='{$data.club_thumb}'>
 		<div class="col-sm-3">
 			<div id="uploader-demo">
 			    <!--用来存放item-->
@@ -134,6 +134,25 @@
 			</div>
 		</div>
 	</div>
+
+	<div class="form-group">
+		<label class="control-label col-sm-2" for="club_event">{$Think.lang.club_event}</label>
+		<div class="col-sm-3">
+			<table class="table">
+				<!--<thead><tr><th>活动名</th><th></th></tr></thead>-->
+				<tbody>
+					<foreach name='data.events' key='k' item='v'>
+			    		<tr>
+			    			<td>{$v.event_id}</td>
+			    			<td>{$v.event_name}</td>
+			    			<td><a href="__APP__/admin/manage/editEvent&event_id={$v.event_id}&cid={$data.club_id}">Edit</a></td>
+			    		</tr>
+			    	</foreach>
+				</tbody>
+			</table>
+		</div>
+	</div>
+
 	
 	<div class="form-group">
 		<div class="col-sm-offset-2 col-sm-2">

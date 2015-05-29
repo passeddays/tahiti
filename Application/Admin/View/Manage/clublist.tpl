@@ -93,7 +93,6 @@ $(function(){
 				current_page:page_num,
 				count_per_page:count_per_page
 			};
-		console.log(word);
 		if(word){
 			switch($('#search-condition').val()){
 				case "1":
@@ -114,7 +113,7 @@ $(function(){
 			if(data.err_no == 0){
 				var list = data.data.list,
 					total_count = data.data.total_count,
-				 	html;
+				 	html = '';
 				current_page = data.data.current_page;
 				for(var i in list){
 					html += '<tr>'

@@ -49,6 +49,13 @@ return array(
 		5 => 'Master',
 		6 => 'other',
 	),
+
+	'club_event' => '活动',
+	'edit_event' => '编辑活动',
+	'event_name' => '活动名称',
+	'event_time' => '活动时间',
+	'event_brief' => '活动简介',
+	'event_img' => '活动图片',
 );
 
 
