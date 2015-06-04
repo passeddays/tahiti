@@ -159,7 +159,49 @@ class ManageController extends Controller {
         $this->assign('citylist', $cityList);
         $this->display('./Manage/editClub');
     }
+    public function addClubApi(){
+        if(IS_POST){
+            $baseObj = M('base', 't_club_');
+            $detailObj = M('detail', 't_club_');
+            $base = array(
+                'club_name' => I('post.club_name'),
+                'club_type' => I('post.club_type'),
+                'club_city' => I('post.club_city'),
+                'club_lat' => I('post.club_lat'),
+                'club_lng' => I('post.club_lng'),
+                'club_thumb' => I('post.club_thumb'),
+                'club_follow' => I('post.club_follow'),
+                'club_price' => I('post.club_price'),
+                'club_brief' => I('post.club_brief'),
+            );
+            $result = $baseObj->add($base);
+            if($result){
+                // 如果主键是自动增长型 成功后返回值就是最新插入的值
+                $cid = $result;
+            }
+            $detail = array(
+                'club_id' => $cid,
+                'club_address' => I('post.club_address'),
+                'club_website' => I('post.club_website'),
+                'club_tel' => I("post.club_tel"),
+                'club_canorder' => I('post.club_canorder'),
+                'club_pic' => I('post.club_pic'),
+                'club_fb' => I('post.club_fb'),
+            );
+            $detailObj->add($detail);
+            $this->redirect('admin/manage/editClub', array('club_id' => $cid));
+        }
+    }
 
+    public function addClub(){
+        $cityObj = M('city', 't_club_');
+        $res['club_type_list'] = $clubType = L('CLUB_TYPE_VAL');
+        $cityList = $cityObj->select();
+        //var_dump($res);exit();
+        $this->assign('data', $res);
+        $this->assign('citylist', $cityList);
+        $this->display('./Manage/addClub');
+    }
     public function upload($upload_type, $self_id){
         $filetype = $_FILES['file']['type'];
         if (($filetype == 'image/gif') || ($filetype == 'image/jpeg') || ($filetype == 'image/png') || ($filetype == 'image/jpg')){
@@ -280,5 +322,28 @@ class ManageController extends Controller {
             $res = $eventObj->where("club_id=%d and event_id=%d",array($cid, $event_id))->setField($eventFields);
         }
         $this->redirect('admin/manage/editClub', array('club_id' => $cid));
+    }
+
+    public function addEvent($cid){
+        $baseObj = M('base', 't_club_');
+        $res = $baseObj->where("club_id=%d", array($cid))->select();
+        $this->assign('data', $res[0]);
+        $this->display('./Manage/addEvent');
+    }
+
+    public function addEventApi($cid){
+        if(IS_POST){
+            $eventObj = M('event', 't_club_');
+            $event = array(
+                'club_id' => $cid,
+                'event_name' => I('post.event_name'),
+                'event_time' => I('post.event_time'),
+                'event_brief' => I('post.event_brief'),
+                'event_poster' => I('post.event_poster'),
+            );
+            $eventObj->add($event);
+            $this->redirect('admin/manage/editClub', array('club_id' => $cid));
+        }
+        
     }
 }

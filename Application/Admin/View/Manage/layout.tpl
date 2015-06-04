@@ -70,7 +70,8 @@
       <div class="well sidebar-nav dir">
         <ul class="nav nav-list">
           <li class="nav-header"><a href="__APP__/admin/manage/changepwd">{$Think.lang.changepwd}<i class="icon-circle-arrow-down toggleicon" id="icon1"></i></a></li>
-          <li class="nav-header"><a href="#">{$Think.lang.club_manage}<i class="icon-circle-arrow-down toggleicon" id="icon2"></i></a></li>
+          <li class="nav-header"><a href="__APP__/admin/manage/index">{$Think.lang.club_manage}<i class="icon-circle-arrow-down toggleicon" id="icon2"></i></a></li>
+          <li class="nav-header"><a href="__APP__/admin/manage/addclub">{$Think.lang.add_club}<i class="icon-circle-arrow-down toggleicon" id="icon2"></i></a></li>
         </ul>
       </div>
     </div>

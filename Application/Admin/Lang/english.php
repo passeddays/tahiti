@@ -8,6 +8,7 @@ return array(
 
 	'manage_index_title' => 'Tahiti Management',
 	'club_manage' => 'Club Management',
+	'add_club' => 'Add Club',
 
 	'changepwd' => 'Change Pass Word',
 	'uname' => 'User name',

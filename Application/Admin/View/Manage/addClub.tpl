@@ -12,18 +12,14 @@
 	<link rel="stylesheet" type="text/css" href="/static/js/webuploader/webuploader.css">
 </block>
 <block name='right'>
-<ol class="breadcrumb">
-  <li><a href="__APP__/admin/manage">{$Think.lang.club_list}</a></li>
-  <li class="active">CLUB ID:{$data.club_id}</li>
-</ol>
-<form class="form-horizontal" action='__APP__/admin/manage/updateClub&cid={$data.club_id}' method='post' >
+<form class="form-horizontal" action='__APP__/admin/manage/addClubApi' method='post' >
 	<div id="legend" class="">
-	    <legend class="">{$Think.lang.edit_club}</legend>
+	    <legend class="">{$Think.lang.add_club}</legend>
 	</div>
 	<div class="form-group">
 		<label class="control-label col-sm-2" for="club_name">{$Think.lang.club_name}</label>
 		<div class="col-sm-3">
-		    <input type="text" placeholder="" class="form-control" id='club_name' value='{$data.club_name}' name='club_name'>
+		    <input type="text" placeholder="" class="form-control" id='club_name' value='' name='club_name'>
 		    <p class="help-block"></p>
 		</div>
 	</div>
@@ -31,7 +27,6 @@
 	<div class="form-group">
 		<label class="control-label col-sm-2" for="club_type">{$Think.lang.club_type}</label>
 		<div class="col-sm-3">
-		    <!--<input type="text" placeholder="" class="form-control" id='club_type' value='{$data.club_type}' name='club_type'>-->
 		    <select id='club_type' class="form-control" name='club_type'>>
 		    	<foreach name='data.club_type_list' key='k' item='v'>
 		    		<if condition="intval($k) eq $data['club_type']">
@@ -58,7 +53,7 @@
 	<div class="form-group">
 		<label class="control-label col-sm-2" for="club_address">{$Think.lang.club_address}</label>
 		<div class="col-sm-3">
-		    <input type="text" placeholder="" class="form-control" id='club_address' value='{$data.club_address}' name='club_address'>
+		    <input type="text" placeholder="" class="form-control" id='club_address' value='' name='club_address'>
 		    <p class="help-block"></p>
 		</div>
 	</div>
@@ -66,7 +61,7 @@
 	<div class="form-group">
 		<label class="control-label col-sm-2" for="club_website">{$Think.lang.club_website}</label>
 		<div class="col-sm-3">
-		    <input type="text" placeholder="" class="form-control" id='club_website' value='{$data.club_website}' name='club_website'>
+		    <input type="text" placeholder="" class="form-control" id='club_website' value='' name='club_website'>
 		    <p class="help-block"></p>
 		</div>
 	</div>
@@ -74,7 +69,7 @@
 	<div class="form-group">
 		<label class="control-label col-sm-2" for="club_fb">{$Think.lang.club_fb}</label>
 		<div class="col-sm-3">
-		    <input type="text" placeholder="" class="form-control" id='club_fb' value='{$data.club_fb}' name='club_fb'>
+		    <input type="text" placeholder="" class="form-control" id='club_fb' value='' name='club_fb'>
 		    <p class="help-block"></p>
 		</div>
 	</div>
@@ -82,7 +77,7 @@
 	<div class="form-group">
 		<label class="control-label col-sm-2" for="club_price">{$Think.lang.club_price}</label>
 		<div class="col-sm-3">
-		    <input type="text" placeholder="" class="form-control" id='club_price' value='{$data.club_price}' name='club_price'>
+		    <input type="text" placeholder="" class="form-control" id='club_price' value='' name='club_price'>
 		    <p class="help-block"></p>
 		</div>
 	</div>
@@ -90,7 +85,7 @@
 	<div class="form-group">
 		<label class="control-label col-sm-2" for="club_tel">{$Think.lang.club_tel}</label>
 		<div class="col-sm-3">
-		    <input type="text" placeholder="" class="form-control" id='club_tel' value='{$data.club_tel}' name='club_tel'>
+		    <input type="text" placeholder="" class="form-control" id='club_tel' value='' name='club_tel'>
 		    <p class="help-block"></p>
 		</div>
 	</div>
@@ -98,15 +93,15 @@
 	<div class="form-group">
 		<label class="control-label col-sm-2" for="club_follow" style='color:red;'>{$Think.lang.club_follow}</label>
 		<div class="col-sm-3">
-		    <input type="text" placeholder="" class="form-control" id='club_follow' value='{$data.club_follow}' name='club_follow'>
+		    <input type="text" placeholder="" class="form-control" id='club_follow' value='' name='club_follow'>
 		    <p class="help-block"></p>
 		</div>
 	</div>
 
 	<div class="form-group">
 		<label class="control-label col-sm-2" for="club_fb" >{$Think.lang.club_loc}</label>
-		<input type='hidden' name='club_lat' id='club_lat' value='{$data.club_lat}'>
-		<input type='hidden' name='club_lng' id='club_lng' value='{$data.club_lng}'>
+		<input type='hidden' name='club_lat' id='club_lat' value=''>
+		<input type='hidden' name='club_lng' id='club_lng' value=''>
 		<div class="col-sm-3" id='little-map'>
 		</div>
 		<div class="col-sm-1">
@@ -118,46 +113,26 @@
 	<div class="form-group">
 		<label class="control-label col-sm-2" for="club_brief">{$Think.lang.club_brief}</label>
 		<div class="col-sm-3">
-			<textarea class="form-control" rows="5" id='club_brief' name='club_brief'>{$data.club_brief}</textarea>
+			<textarea class="form-control" rows="5" id='club_brief' name='club_brief'></textarea>
 		</div>
 	</div>
 
 	<div class="form-group">
 		<label class="control-label col-sm-2" for="club_logo">{$Think.lang.club_logo}</label>
-		<input type='hidden' name='club_thumb' id='club_thumb' value='{$data.club_thumb}'>
+		<input type='hidden' name='club_thumb' id='club_thumb' value=''>
 		<div class="col-sm-3">
 			<div id="uploader-demo">
 			    <!--用来存放item-->
 			    <!--<div id="fileList" class="uploader-list"></div>-->
-			    <img src="{$data.club_thumb}" alt="club logo" id='logo-img' style="max-width:200px;">
+			    <img src="" alt="club logo" id='logo-img' style="max-width:200px;display:none;">
 			    <div id="filePicker">选择图片</div>
 			</div>
 		</div>
 	</div>
-
-	<div class="form-group">
-		<label class="control-label col-sm-2" for="club_event">{$Think.lang.club_event}</label>
-		<div class="col-sm-3">
-			<a href="__APP__/admin/manage/addEvent&cid={$data.club_id}">{$Think.lang.add_event}</a>
-			<table class="table">
-				<!--<thead><tr><th>活动名</th><th></th></tr></thead>-->
-				<tbody>
-					<foreach name='data.events' key='k' item='v'>
-			    		<tr>
-			    			<td>{$v.event_id}</td>
-			    			<td>{$v.event_name}</td>
-			    			<td><a href="__APP__/admin/manage/editEvent&event_id={$v.event_id}&cid={$data.club_id}">Edit</a></td>
-			    		</tr>
-			    	</foreach>
-				</tbody>
-			</table>
-		</div>
-	</div>
-
 	
 	<div class="form-group">
 		<div class="col-sm-offset-2 col-sm-2">
-		  <button class="btn btn-primary" type='submit'>Update</button>
+		  <button class="btn btn-primary" type='submit'>ADD</button>
 		</div>
 	</div>
 </form>
@@ -180,13 +155,13 @@
 <script type="text/javascript">
 $(function(){
 	$('#little-map').height($('#little-map').width());
-	var lat = {$data.club_lat}, lng = {$data.club_lng};
+	var lat = -11.07777, lng = -44.255559;
 	var littleMap = {
 		init : function(){
 			var point = new google.maps.LatLng(lat, lng);
 			var mapOptions = {
 				center: point,
-				zoom: 13,
+				zoom: 3,
 				mapTypeId: google.maps.MapTypeId.ROADMAP,
 				streetViewControl: false
 			};
@@ -204,7 +179,7 @@ $(function(){
 				me = this;
 			var mapOptions = {
 				center: point,
-				zoom: 13,
+				zoom: 3,
 				mapTypeId: google.maps.MapTypeId.ROADMAP,
 				streetViewControl: false,
 				scaleControl: false
@@ -342,6 +317,7 @@ uploader.on( 'fileQueued', function( file ) {
 });
 uploader.on('uploadSuccess', function (file, response) {
 	$('#club_thumb').val(response.data);
+	$('#logo-img').attr('src', "/thumb/"+response.data).css('display', 'block');
 });
 </script>
 </block>

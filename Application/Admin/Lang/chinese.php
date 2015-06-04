@@ -8,6 +8,7 @@ return array(
 
 	'manage_index_title' => 'Tahiti后台管理',
 	'club_manage' => 'club管理',
+	'add_club' => '添加club',
 
 	'changepwd' => '修改密码',
 	'uname' => '用户名',
@@ -51,6 +52,7 @@ return array(
 	),
 
 	'club_event' => '活动',
+	'add_event' => '添加活动',
 	'edit_event' => '编辑活动',
 	'event_name' => '活动名称',
 	'event_time' => '活动时间',
