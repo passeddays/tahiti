@@ -5,7 +5,7 @@ return array(
     'mysql' => array(
     'db_type'  => 'mysql',
     'db_user'  => 'root',
-    'db_pwd'   => 'root',
+    'db_pwd'   => 'tahiti',
     'db_host'  => '127.0.0.1',
     'db_port'  => '3306',
     'db_name'  => 'tahiti',
