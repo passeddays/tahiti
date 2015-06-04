@@ -86,7 +86,7 @@ var uploader = WebUploader.create({
     swf: '/static/js/Uploader.swf',
 
     // 文件接收服务端。
-    server: '__APP__/admin/manage/upload&upload_type=event&self_id={$data.club_id}',
+    server: '__APP__/admin/manage/upload&upload_type=event',
 
     // 选择文件的按钮。可选。
     // 内部根据当前运行是创建，可能是input元素，也可能是flash.

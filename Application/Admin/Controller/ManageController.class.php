@@ -202,7 +202,7 @@ class ManageController extends Controller {
         $this->assign('citylist', $cityList);
         $this->display('./Manage/addClub');
     }
-    public function upload($upload_type, $self_id){
+    public function upload($upload_type){
         $filetype = $_FILES['file']['type'];
         if (($filetype == 'image/gif') || ($filetype == 'image/jpeg') || ($filetype == 'image/png') || ($filetype == 'image/jpg')){
             if ($_FILES['file']['error'] > 0){
@@ -234,9 +234,6 @@ class ManageController extends Controller {
                         break;
                     case 'img':
                         $path = SERVER_PATH."/img";
-                        // $imgObj = M('img', 't_club_');
-                        // $data['img_id'] = $img_name;
-                        // $imgObj->where("img_id=".$self_id)->setField($data);
                         break;
                     default:
                         $this->ajaxReturn(array(
