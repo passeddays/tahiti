@@ -32,7 +32,7 @@ class IndexController extends Controller {
                 move_uploaded_file($_FILES['img']['tmp_name'], $img_path);
                 $ret = array(
                     'err_no' => 0,
-                    'data' => "http://".$_SERVER['SERVER_ADDR'].__APP__."/ImgServer/index/downloadpic&img_name=$img_name",
+                    'data' => "http://".$_SERVER['HTTP_HOST'].__APP__."/ImgServer/index/downloadpic&img_name=$img_name",
                     'err_msg'=> '',
                 );   
             }
