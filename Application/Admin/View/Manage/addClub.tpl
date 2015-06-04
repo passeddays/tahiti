@@ -132,7 +132,7 @@
 	
 	<div class="form-group">
 		<div class="col-sm-offset-2 col-sm-2">
-		  <button class="btn btn-primary" type='submit'>ADD</button>
+		  <button class="btn btn-primary" type='submit' id='submit'>ADD</button>
 		</div>
 	</div>
 </form>
@@ -314,10 +314,12 @@ uploader.on( 'fileQueued', function( file ) {
 
         $img.attr( 'src', src );
     }, 100, 100 );
+    $('#submit').attr('disabled',true);
 });
 uploader.on('uploadSuccess', function (file, response) {
 	$('#club_thumb').val(response.data);
 	$('#logo-img').attr('src', "/thumb/"+response.data).css('display', 'block');
+	$('#submit').attr('disabled',false);
 });
 </script>
 </block>
