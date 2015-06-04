@@ -11,10 +11,10 @@ class IndexController extends Controller {
     }
 
 	public function _before_index(){
-		$this->auth();
+		//$this->auth();
 	}
     public function index(){
-    	echo 'app index';
+    	echo 'welcome';
     }
     
     public function search($rid, $ct, $city = 0, $co, $un, $uid, $wd){
