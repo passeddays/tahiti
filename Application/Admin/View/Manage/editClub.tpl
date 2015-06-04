@@ -156,7 +156,7 @@
 	
 	<div class="form-group">
 		<div class="col-sm-offset-2 col-sm-2">
-		  <button class="btn btn-primary" type='submit'>Update</button>
+		  <button class="btn btn-primary" type='submit' id='submit'>Update</button>
 		</div>
 	</div>
 </form>
@@ -338,9 +338,11 @@ uploader.on( 'fileQueued', function( file ) {
 
         $img.attr( 'src', src );
     }, 100, 100 );
+    $('#submit').attr('disabled',true);
 });
 uploader.on('uploadSuccess', function (file, response) {
 	$('#club_thumb').val(response.data);
+	$('#submit').attr('disabled',false);
 });
 </script>
 </block>
