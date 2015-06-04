@@ -57,7 +57,7 @@ class IndexController extends Controller {
             ));
         }
         $db = M('count', 'download_', 'mysql');
-        if($db->where('count<100')->setDec('count',1)){
+        if($db->where('count>=1')->setDec('count',1)){
             $file = "$path/$img_name";
             header('Content-Type: application/force-download');
             header('Content-Disposition: attachment; filename='.basename($file));
