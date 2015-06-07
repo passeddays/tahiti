@@ -353,6 +353,6 @@ class ManageController extends Controller {
             $cityId = $res[0]['city_id'];
         }
 
-        return json_encode(array('city_id' => $cityId));
+        echo $cityId;
     }
 }
