@@ -224,7 +224,7 @@ class ManageController extends Controller {
                 if($filetype == 'image/gif'){ 
                     $type = '.gif'; 
                 } 
-                $img_name = time().$type;
+                $img_name = md5($_FILES['file']['tmp_name']).$type;
                 switch ($upload_type) {
                     case 'thumb':
                         $path = SERVER_PATH."/thumb";
