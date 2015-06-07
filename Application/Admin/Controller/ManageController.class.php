@@ -352,6 +352,7 @@ class ManageController extends Controller {
         }else{
             $cityId = $res[0]['city_id'];
         }
-        return $cityId;
+
+        return json_encode(array('city_id' => $cityId));
     }
 }
