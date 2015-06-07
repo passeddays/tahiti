@@ -343,4 +343,10 @@ class ManageController extends Controller {
         }
         
     }
+
+    public function getCityIdByCityName($cityName){
+        $cityObj = M('city', 't_club_');
+        $res = $cityObj->where("city_name = '$cityName'")->select();
+        var_dump($res);
+    }
 }
