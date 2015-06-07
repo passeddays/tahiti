@@ -344,9 +344,15 @@ class ManageController extends Controller {
         
     }
 
-    public function getCityIdByCityName($cityName){
+    public function getCityIdByCityName($city_name){
         $cityObj = M('city', 't_club_');
         $res = $cityObj->where("city_name = '$cityName'")->select();
-        var_dump($res);
+        if(empty($res)){
+            $addRes = $cityObj->add(array('city_name' => $city_name));
+            var_dump($addRes);
+        }else{
+            $cityId = $res[0]['city_id'];
+        }
+        return $cityId;
     }
 }
