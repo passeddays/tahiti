@@ -8,10 +8,27 @@ class IndexController extends Controller {
         $filetype = $_FILES['img']['type'];
         if (($filetype == 'image/gif') || ($filetype == 'image/jpeg') || ($filetype == 'image/png') || ($filetype == 'image/jpg')){
             if ($_FILES['img']['error'] > 0){
+                switch ($_FILES['img']['error']) {
+                    case '1':
+                        $errMsg = "over upload_max_filesize " ;
+                        break;
+                    case '2':
+                        $errMsg = "over MAX_FILE_SIZE  " ;
+                        break;
+                    case '3':
+                        $errMsg = "upload Incomplete  " ;
+                        break;
+                    case '4':
+                        $errMsg = "no file upload " ;
+                        break;
+                    default:
+                        $errMsg = "unknow error" ;
+                        break;
+                }
                 $ret = array(
-                    'err_no' => 1,
+                    'err_no' => $_FILES['img']['error'],
                     'data' => '',
-                    'err_msg'=> 'error>0',
+                    'err_msg'=> $errMsg,
                 );
             }else{
                 if($filetype == 'image/jpeg'){ 
@@ -38,7 +55,7 @@ class IndexController extends Controller {
             }
         }else{
             $ret = array(
-                'err_no' => 1,
+                'err_no' => -1,
                 'data' => '',
                 'err_msg'=> 'error type',
             );
