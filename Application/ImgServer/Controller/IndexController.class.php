@@ -6,31 +6,31 @@ class IndexController extends Controller {
     public function uploadpic(){
         $path = C('file_path');
         $filetype = $_FILES['img']['type'];
-        if (($filetype == 'image/gif') || ($filetype == 'image/jpeg') || ($filetype == 'image/png') || ($filetype == 'image/jpg')){
-            if ($_FILES['img']['error'] > 0){
-                switch ($_FILES['img']['error']) {
-                    case '1':
-                        $errMsg = "over upload_max_filesize " ;
-                        break;
-                    case '2':
-                        $errMsg = "over MAX_FILE_SIZE  " ;
-                        break;
-                    case '3':
-                        $errMsg = "upload Incomplete  " ;
-                        break;
-                    case '4':
-                        $errMsg = "no file upload " ;
-                        break;
-                    default:
-                        $errMsg = "unknow error" ;
-                        break;
-                }
-                $ret = array(
-                    'err_no' => $_FILES['img']['error'],
-                    'data' => '',
-                    'err_msg'=> $errMsg,
-                );
-            }else{
+        if ($_FILES['img']['error'] > 0){
+            switch ($_FILES['img']['error']) {
+                case '1':
+                    $errMsg = "over upload_max_filesize " ;
+                    break;
+                case '2':
+                    $errMsg = "over MAX_FILE_SIZE  " ;
+                    break;
+                case '3':
+                    $errMsg = "upload Incomplete  " ;
+                    break;
+                case '4':
+                    $errMsg = "no file upload " ;
+                    break;
+                default:
+                    $errMsg = "unknow error" ;
+                    break;
+            }
+            $ret = array(
+                'err_no' => $_FILES['img']['error'],
+                'data' => '',
+                'err_msg'=> $errMsg,
+            );
+        }else{
+            if (($filetype == 'image/gif') || ($filetype == 'image/jpeg') || ($filetype == 'image/png') || ($filetype == 'image/jpg')){
                 if($filetype == 'image/jpeg'){ 
                     $type = '.jpeg'; 
                 } 
@@ -51,14 +51,14 @@ class IndexController extends Controller {
                     'err_no' => 0,
                     'data' => "http://".$_SERVER['HTTP_HOST'].__APP__."/ImgServer/index/downloadpic&img_name=$img_name",
                     'err_msg'=> '',
-                );   
+                );  
+            }else{
+                $ret = array(
+                    'err_no' => -1,
+                    'data' => '',
+                    'err_msg'=> 'error type',
+                );
             }
-        }else{
-            $ret = array(
-                'err_no' => -1,
-                'data' => '',
-                'err_msg'=> 'error type',
-            );
         }
         $this->ajaxReturn($ret);
     }
