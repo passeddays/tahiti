@@ -1,5 +1,13 @@
 <extend name='./Manage/layout' />
 <block name='head'>
+	<style type="text/css">
+        .pagination li > input{
+        	margin-left: 10px;
+            height: 34px;
+            width:40px;
+            float:left;
+        }
+    </style>
 </block>
 <block name='right'>
 <div class="row">
@@ -51,11 +59,18 @@
     <li class='page'><a href="#" >3</a></li>
     <li class='page'><a href="#" >4</a></li>
     <li class='page'><a href="#" >5</a></li>
+    <li class='page'><a href="#" >6</a></li>
+    <li class='page'><a href="#" >7</a></li>
+    <li class='page'><a href="#" >8</a></li>
+    <li class='page'><a href="#" >9</a></li>
+    <li class='page'><a href="#" >10</a></li>
     <li class='next'>
       <a href="#" aria-label="Next" >
         <span aria-hidden="true">&raquo;</span>
       </a>
     </li>
+    <li><input type="text" class="form-control" id='page-id'></li>
+    <li><a href="#" id='page-go'>Go</a></li>
   </ul>
 </nav>
 </block>
@@ -65,13 +80,13 @@ $(function(){
 	var current_page = 1, count_per_page = 10;
 	var pagination = function(current_page, total_page_count){
 		$('.pagination').find('li').removeClass('disabled').removeClass('active');
-		var page_num = 5, html;
+		var page_num = 10, html;
 		var start = Math.floor(current_page/page_num)*page_num+1,
 			end = Math.ceil(current_page/page_num)*page_num;
 		if(current_page <= page_num){
 			$('.pre').addClass('disabled');
 		}
-		if((start+5) >= total_page_count){
+		if((start+page_num) >= total_page_count){
 			$('.next').addClass('disabled');
 			end = total_page_count;
 		}
@@ -85,7 +100,7 @@ $(function(){
 				$('.page').eq(i).css('display','none');
 			}
 		}
-		
+		$('#page-id').val(current_page);
 	};
 	var getClubList = function(page_num){
 		var word = $('#search-word').val(),
@@ -141,6 +156,15 @@ $(function(){
 	$('#search').click(function(){
 		getClubList(1);
 	}).click();
+	$(document).keypress(function(e) {  
+    	// 回车键事件  
+        if(e.keyCode == 13) {  
+    		$('#search').click();  
+        }  
+    }); 
+    $('#page-go').click(function(){
+    	getClubList($('#page-id').val());
+    });
 	var bindClick = function(){
 		$('.page').unbind();
 		$('.next').unbind();
