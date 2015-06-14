@@ -181,13 +181,13 @@ $(function(){
 			if($(this).hasClass('disabled')){
 				return ;
 			}
-			getClubList(Number(current_page)+5);
+			getClubList(Number(current_page)+10);
 		});
 		$('.pre').click(function(){
 			if($(this).hasClass('disabled')){
 				return ;
 			}
-			getClubList(Number(current_page)-5);
+			getClubList(Number(current_page)-10);
 			
 		});
 		$('.delete').click(function(){
